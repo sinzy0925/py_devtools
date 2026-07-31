@@ -1,0 +1,23 @@
+{
+  "name": "py-devtools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Natural-language Chrome automation via Gemini CLI + chrome-devtools MCP",
+  "scripts": {
+    "start": "tsx src/run-gemini-chrome.ts",
+    "chrome": "tsx src/start-chrome-cdp.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,2 +1,4 @@
 chrome-profile/
+downloads/
 .env
+node_modules/
