@@ -34,13 +34,10 @@ Chrome（CDP: 127.0.0.1:9222, 専用プロファイル）
 
 ### セットアップ
 
-1. リポジトリ直下に `.env` を作成する。
+1. `.env.example` をコピーして `.env` を作り、`GEMINI_API_KEY` を設定する。
 
-```env
-CDP_HOST=127.0.0.1
-CDP_PORT=9222
-CHROME_USER_DATA_DIR=./chrome-profile
-GEMINI_API_KEY=あなたのAPIキー
+```powershell
+copy .env.example .env
 ```
 
 2. Gemini CLI をインストールする。
@@ -84,6 +81,7 @@ Chrome だけ先に起動する場合:
 | `start-chrome-cdp.ps1` | CDP 付き Chrome のみ起動 |
 | `.gemini/settings.json` | chrome-devtools MCP の設定 |
 | `.gemini/GEMINI.md` | エージェントへの常設指示 |
+| `.env.example` | `.env` のサンプル（API キー・CDP 設定） |
 | `.env` | API キー・CDP 設定（Git 管理外） |
 | `chrome-profile/` | 専用 Chrome プロファイル（Git 管理外） |
 
